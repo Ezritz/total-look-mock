@@ -1,13 +1,17 @@
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { logIn } from "./firebase/Auth";
+import { logIn } from "../firebase/Auth";
 
 export default function Login(){
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const navigate= useNavigate();
     const handleLogIn = (e) => {
         e.preventDefault();
         console.log('Iniciando sesión ')
-        logIn(email, password)
+        logIn(email, password).then(()=>{
+            navigate('/Admin')
+        })
     }
 
     return(
