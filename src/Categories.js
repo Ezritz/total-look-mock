@@ -12,6 +12,7 @@ import TheCategories from './TheCategories';
 
 
 export default function Categories () {
+
     const [collection, setCollection] = useState('');
     const getCategories =  () => {  
         db.collection('totallook').onSnapshot((snapshot) => {
@@ -42,6 +43,7 @@ export default function Categories () {
             />
         })
     */}
+
 
     return (
         <div>

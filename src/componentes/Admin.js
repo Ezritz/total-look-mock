@@ -1,3 +1,4 @@
+
 import {useState} from 'react';
 import {Link} from 'react-router-dom';
 import {AddImg, description} from '../firebase/Auth';
@@ -8,9 +9,12 @@ export default function Admin () {
 
     
 
-    const handleFile= (e) => {
-        const targ = e.target.files[0];
-        AddImg(targ,targ.name).then(() =>{ console.log('succesfull')})
+
+    AddImg.snapshot.ref.getDownloadURL().then((url_img) => {
+      console.log("url", url_img);
+    });
+    setCategory("");
+
 
             AddImg.snapshot.ref.getDownloadURL().then((url_img)=>{
                 console.log('url', url_img)
@@ -56,5 +60,6 @@ export default function Admin () {
         </main>
         
     )
-
+  
+ 
 }
