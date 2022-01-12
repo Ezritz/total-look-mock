@@ -5,6 +5,7 @@ import Admin from './componentes/Admin';
 
 import './App.css';
 import Login from './componentes/Login';
+import Categories from './Categories';
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
             }/>
           <Route path="Login" 
           element={<Login/>}/>
-          
+          <Route path="/Categories"
+          element={<Categories/>}/>
         </Routes>
       
       </BrowserRouter>
