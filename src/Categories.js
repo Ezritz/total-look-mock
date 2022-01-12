@@ -5,11 +5,21 @@ import handBags from './bags.jpg';
 import kids from './kids.jpg';
 import accesories from './accesories.jpg';
 import others from './others.jpg';
-// import TheCategories from './TheCategories';
-import data from './data';
+import { SeeImg } from './firebase/Auth';
+
+import TheCategories from './TheCategories';
+
 
 export default function Categories () {
     
+
+    const imgs = SeeImg.map((element) => {
+        return <TheCategories 
+        url={element.url}
+        name={element.name}
+        
+        />
+    })
     
     
 

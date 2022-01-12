@@ -1,8 +1,10 @@
+import {useState} from 'react';
 import {Link} from 'react-router-dom';
 import {AddImg} from '../firebase/Auth';
 
+
 export default function Admin () {
-    
+    const [category, setCategory] = useState('')
 
     const handleFile= (e) => {
         const targ = e.target.files[0];
@@ -11,7 +13,7 @@ export default function Admin () {
             AddImg.snapshot.ref.getDownloadURL().then((url_img)=>{
                 console.log('url', url_img)
             })
-            
+            setCategory('')
         
         console.log(targ);
     }
@@ -25,8 +27,12 @@ export default function Admin () {
                 <input onChange={handleFile}
                 type="file"accept="image/png, image/jpeg, image/jpg"/>
                 <label>Description</label>
-                <input type="text"/>
-                <button type="submit">Send</button>
+                <input 
+                onChange={category}
+                type="text"/>
+                <button 
+                
+                type="submit">Send</button>
                 <button>Delete</button>
             </form>
             <Link to= "/Categories">Back to categories list</Link>
