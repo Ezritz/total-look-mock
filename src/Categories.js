@@ -1,21 +1,24 @@
 import React, {useState} from "react";
-import './categories.css';
 import clothes from './clothes.jpg';
 import shoes from './shoes.jpg';
 import handBags from './bags.jpg';
 import kids from './kids.jpg';
 import accesories from './accesories.jpg';
 import others from './others.jpg';
-import TheCategories from './TheCategories.js'
+// import TheCategories from './TheCategories';
+import data from './data';
 
-export default function Categories (image) {
-const [image, setImage]= useState('')
+export default function Categories () {
+    
+    
+    
+
     return (
         <div>
          <a> Return Home </a>
 
             <div>
-                <Link> Search products </Link>
+                <label> Search products </label>
                     <input type="text" className="search"/>
             </div>
 
@@ -24,8 +27,7 @@ const [image, setImage]= useState('')
             <div className="Categories">
 
                 <div className= "category">
-                    <img src= {setImage}  alt="clothes" className = 'clothes'/>
-                        <p className = "categoriesName" >Clothes</p>
+                    
                 </div>
 
                               {/*  <div className= "category">
