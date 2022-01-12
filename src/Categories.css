@@ -1,7 +1,13 @@
 .Categories{
     display: flex;
-    width: 100px;
+    width: 100%;
+}
 
+.category{
+    display: flex;
+    width: 361px;
+    height: 236px;
+    
 }
 
 

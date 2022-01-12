@@ -1,29 +1,49 @@
-// import { useState, useEffect } from 'react';
+//import { useState, useEffect } from 'react';
 import Sales from './Sales';
-import Banner from './Banner'
-import myImage from '../images/search-1.png';
-import '../css/Home.css'
+import Banner from './Banner';
+import '../css/Home.css';
+import Categories from '../Categories';
+
+
 
 export default function Inicio () {
-   // const [activeMenu, setActiveMenu] = useState('');
-
+    
     return (
-        <div className='bodyAll'>
-            <Banner/>        
-            <main>
-                <p>See all promotions ..</p>
-            <section>
-                <label>Search products</label>
-                <input type="text"
+        <div>
+            <div>
+                <Banner />
+            </div>
+            <div>
+                <label>Search products </label> 
+                <input
+                    type="text"
                     className="search"
+                    
                 />
-                <img src={myImage} alt="sale" width="20px"/>
-            </section>
-            <section>
+                <label
+                className="logo-search"
+                >🔎</label>
+            </div>
+            
+            <div>
+                <a>
+                    See all promotions >>
+                </a>
+                
+                
+                
+               
+            </div>
+            <div>
                 <Sales />
-            </section>
-          </main>
+                <Categories />
+            </div>
+            <footer  
+            className='copyright'
+            >Web site create by Scrumble Code
+            </footer>   
         </div>
+        
     )
 
 

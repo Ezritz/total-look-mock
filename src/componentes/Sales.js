@@ -1,5 +1,6 @@
 import sale1 from '../images/sale-1.png';
 import sale2 from '../images/sale-2.png';
+import '../css/Sales.css';
 
 export default function Promociones (){
     return (

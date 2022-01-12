@@ -8,12 +8,15 @@ import others from './others.jpg';
 
 export default function TheCategories(){
     return(
-        <Categories image = {clothes}/>;
-        <Categories image = {shoes}/>;
-        <Categories image = {handBags}/>;
-        <Categories image = {kids}/>;
-        <Categories image = {accesories}/>;
-        <Categories image = {others}/>;
+        <div>
+            <Categories image = {clothes}/>;
+            <Categories image = {shoes}/>;
+            <Categories image = {handBags}/>;
+            <Categories image = {kids}/>;
+            <Categories image = {accesories}/>;
+            <Categories image = {others}/>;
+        </div>
+        
         
     );
 }
