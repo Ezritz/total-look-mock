@@ -33,6 +33,7 @@ export default function Inicio () {
             </div>
             <div>
                 <Sales />
+                
             </div>
         </div>
     )

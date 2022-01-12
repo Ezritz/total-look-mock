@@ -1,7 +1,13 @@
 .sale2{
     position:relative;
-    max-width: 1325.39px;
+    max-width: 92.5%;
     margin-top: 35px;
     padding: 10px;
     margin: 0 2% auto;
+}
+
+.sale1{
+    position:relative;
+    max-width: 93.5%;
+    align-items: center;
 }
