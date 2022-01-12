@@ -40,7 +40,7 @@ export default function Inicio () {
             </div>
             <footer  
             className='copyright'
-            >Web site create by Scrumble Code
+            >Copyright©️ Scrumbled Code
             </footer>   
         </div>
         
