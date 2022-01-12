@@ -6,15 +6,11 @@ import kids from './kids.jpg';
 import accesories from './accesories.jpg';
 import others from './others.jpg';
 
-export default function TheCategories(){
+export default function TheCategories({url, name}){
+    console.log(url,name, 'holis')
     return(
         <div>
-            <Categories image = {clothes}/>;
-            <Categories image = {shoes}/>;
-            <Categories image = {handBags}/>;
-            <Categories image = {kids}/>;
-            <Categories image = {accesories}/>;
-            <Categories image = {others}/>;
+           
         </div>
         
         
