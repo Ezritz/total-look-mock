@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react';
+//import { useState, useEffect } from 'react';
 import Sales from './Sales';
 import Banner from '../Banner';
 import '../css/Home.css';
 import Categories from '../Categories';
+
 
 
 export default function Inicio () {
@@ -37,7 +38,12 @@ export default function Inicio () {
                 <Sales />
                 <Categories />
             </div>
+            <footer  
+            className='copyright'
+            >Web site create by Scrumble Code
+            </footer>   
         </div>
+        
     )
 
 

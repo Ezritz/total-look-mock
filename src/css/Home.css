@@ -27,7 +27,7 @@ label{
 .logo-search{
     display: flex;
     justify-content: right;
-    margin:-3% 97% auto;
+    margin:-3% 93% auto;
     
     
 }
@@ -39,4 +39,11 @@ label{
     font-size: 30px;
     width: 343px;
     height: 52px;
+}
+
+.copyright {
+    background: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
 }
