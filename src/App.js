@@ -1,11 +1,30 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './componentes/Home';
+import Sales from './componentes/Sales';
 import './App.css';
+import Login from './componentes/Login';
 
 function App() {
   return (
-  
-    <div className="App">
-      <p>Hello</p>
-    </div>
+
+ 
+      <BrowserRouter>
+        <Routes>
+          <Route path="/Admin"/>
+          <Route path="/"
+            element={<Home />
+            }/>
+          <Route path="/Promociones"
+            element={<Sales />
+            }/>
+          <Route path="Login" 
+          element={<Login/>}/>
+          
+        </Routes>
+      
+      </BrowserRouter>
+
+
   );
 }
 
