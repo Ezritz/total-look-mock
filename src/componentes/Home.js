@@ -2,12 +2,14 @@
 import Sales from './Sales';
 import Banner from './Banner';
 import '../css/Home.css';
+import {useNavigate} from 'react-router-dom';
 import Categories from '../Categories';
 
 
 
 export default function Inicio () {
     
+    const navig = useNavigate();
     return (
         <div>
             <div>
@@ -31,12 +33,17 @@ export default function Inicio () {
                 </a>
                 
                 
+               <a
+               
+               onClick={navig('/Categories')}>
+                   See all products >>
+               </a>
                 
                
             </div>
             <div>
                 <Sales />
-                <Categories />
+                
             </div>
             <footer  
             className='copyright'
