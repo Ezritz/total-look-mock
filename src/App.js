@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './componentes/Home';
 import Sales from './componentes/Sales';
 import './App.css';
@@ -6,7 +6,7 @@ import Login from './componentes/Login';
 
 function App() {
   return (
-    <div className="App">
+ 
       <BrowserRouter>
         <Routes>
           <Route path="/Admin"/>
@@ -22,7 +22,7 @@ function App() {
         </Routes>
       
       </BrowserRouter>
-    </div>
+
   );
 }
 

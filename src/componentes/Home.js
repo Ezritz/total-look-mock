@@ -2,31 +2,27 @@
 import Sales from './Sales';
 import Banner from './Banner'
 import myImage from '../images/search-1.png';
+import '../css/Home.css'
 
 export default function Inicio () {
    // const [activeMenu, setActiveMenu] = useState('');
 
     return (
-    
-        <div>
-        <Banner/>        
-            <a>
-                See all promotions >>
-            </a>
-            <div>
+        <div className='bodyAll'>
+            <Banner/>        
+            <main>
+                <p>See all promotions ..</p>
+            <section>
                 <label>Search products</label>
-                <input
-                    type="text"
+                <input type="text"
                     className="search"
-                    
                 />
-                <img src={myImage} width="20px"/>
-                
-               
-            </div>
-            <div>
+                <img src={myImage} alt="sale" width="20px"/>
+            </section>
+            <section>
                 <Sales />
-            </div>
+            </section>
+          </main>
         </div>
     )
 
