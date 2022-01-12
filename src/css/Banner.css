@@ -1,0 +1,34 @@
+
+header{
+    width: 100%;
+}
+.banner-container{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(180deg, #FFB800 0%, #FF7A00 100%);
+}
+.logo{
+    /* width: 650px; */
+    /* height: 9vh; */
+    padding-left: 2rem;
+}
+
+.container-login{
+    display: flex;
+    padding-right: 2rem;
+
+}
+
+.btn-login{
+    border: none;
+    background: none;
+    font-size: 60px;
+}
+
+.cart{
+    width: 45px;
+    height: 40px;
+}

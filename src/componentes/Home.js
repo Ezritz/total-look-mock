@@ -1,6 +1,6 @@
 //import { useState, useEffect } from 'react';
 import Sales from './Sales';
-import Banner from '../Banner';
+import Banner from './Banner';
 import '../css/Home.css';
 import Categories from '../Categories';
 

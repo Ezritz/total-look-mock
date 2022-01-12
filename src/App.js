@@ -3,11 +3,12 @@ import Home from './componentes/Home';
 import Sales from './componentes/Sales';
 
 import './App.css';
+import Login from './componentes/Login';
 
 function App() {
   return (
   
-    <div className="App">
+    
       <BrowserRouter>
         <Routes>
           <Route path="/Admin"/>
@@ -17,12 +18,14 @@ function App() {
           <Route path="/Promociones"
             element={<Sales />
             }/>
-          <Route path="Login"/>
+          <Route path="Login" 
+          element={<Login/>}/>
           
         </Routes>
       
       </BrowserRouter>
-    </div>
+
+
   );
 }
 
