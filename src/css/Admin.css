@@ -1,0 +1,56 @@
+main{
+    /* position: absolute; */ 
+    width: 1141.14px;
+    height: 595.26px;
+    left: 160.96px;
+    top: 241.49px;
+    background: linear-gradient(180deg, #FFB800 0%, #FF7A00 100%);
+    border-radius: 5px;
+    display:flex;
+   justify-content: center;
+   padding: 50px;
+   margin: 110px;
+   display: flex;
+   /* align-items: center;*/
+}
+
+.copyright {
+    background: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+button {
+    border: none;
+    border-radius: 100px;
+    width:15%;
+    font-family: "Belleza", sans-serif;
+    width: 200px;
+    margin:20px;
+    padding: 10px;
+    font-size: 20px;
+}
+.edit{
+    border: none;
+    border-radius: 100px;
+    width:15%;
+    font-family: "Belleza", sans-serif;
+    font-size: 20px;
+}
+.delete{
+    border: none;
+    border-radius: 100px;
+    width:15%;
+    font-family: "Belleza", sans-serif;
+    font-size: 20px;
+}
+
+.container-login{
+    padding-right:0em;
+}
+
+.btn-login{
+    
+
+}

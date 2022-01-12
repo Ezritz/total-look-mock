@@ -13,13 +13,13 @@ import TheCategories from './TheCategories';
 export default function Categories () {
     
 
-    const imgs = SeeImg.map((element) => {
-        return <TheCategories 
-        url={element.url}
-        name={element.name}
+    // const imgs = SeeImg.map((element) => {
+    //     return <TheCategories 
+    //     url={element.url}
+    //     name={element.name}
         
-        />
-    })
+    //     />
+    // })
     
     
 
